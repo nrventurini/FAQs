@@ -1,0 +1,253 @@
+<section id="faq">
+  <h2>PREGUNTAS FRECUENTES (FAQs)</h2>
+
+  <!-- Estilo general -->
+  <style>
+    :root {
+      --primary: #005f7f;
+      --bg-question: #f5fafd;
+      --bg-answer: #ffffff;
+      --font-family: 'Arial, sans-serif';
+    }
+    #faq { font-family: var(--font-family); max-width: 800px; margin: auto; }
+    .faq-category { margin-bottom: 2em; }
+    .faq-category h3 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: .5em; }
+    .faq-item { margin-bottom: 0.5em; }
+    .faq-item button {
+      width: 100%; text-align: left;
+      background: var(--bg-question); border: none;
+      padding: .8em; font-size: 1.1em; cursor: pointer;
+    }
+    .faq-answer {
+      padding: .8em 1em;
+      background: var(--bg-answer);
+      border-left: 4px solid var(--primary);
+    }
+  </style>
+
+  <script>
+    function toggleFAQ(el) {
+      const ans = el.nextElementSibling;
+      const expanded = el.getAttribute('aria-expanded') === 'true';
+      el.setAttribute('aria-expanded', String(!expanded));
+      ans.hidden = expanded;
+    }
+  </script>
+
+  <!-- Categoría 1 -->
+  <div class="faq-category">
+    <h3>Acerca de VitalExtension</h3>
+   <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Por qué debería elegir VitalExtension frente a otras clínicas?
+  </button>
+  <div class="faq-answer" hidden>
+    Porque democratizamos la medicina de la longevidad, es decir, lo que antes solo era accesible para unos pocos, lo ponemos al alcance de todos, sin lujos innecesarios ni sobrecostes.
+    <br><br>
+    A diferencia de clínicas generalistas, en VitalExtension:
+    <ul>
+      <li><strong>Aplicamos la Medicina 4.0</strong> para anticipar y modular tu envejecimiento biológico.</li>
+      <li><strong>Integramos tus datos genéticos, biomarcadores y estilo de vida</strong> con IA y supervisión médica real.</li>
+      <li><strong>Validamos cada intervención (suplementos, dietas, terapias)</strong> con criterios de medicina basada en evidencia.</li>
+      <li><strong>Garantizamos la soberanía de tus datos</strong>: tú decides qué compartes y con quién, cumpliendo RGPD y cifrado avanzado.</li>
+      <li><strong>Ofrecemos continuidad</strong>: no solo informes, sino acompañamiento médico con seguimiento longitudinal, planes personalizados y actualización constante.</li>
+    </ul>
+    En resumen: VitalExtension es la opción para quienes buscan accesibilidad con rigor científico, acompañamiento médico real y control sobre su salud futura.
+   </div>
+  </div>
+  <div class="faq-item">
+    <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Qué significa que en VitalExtension aplicamos la "Medicina 4.0"?
+    </button>
+    <div class="faq-answer" hidden>
+    VitalExtension es pionera en aplicar los principios de la Medicina 4.0: una nueva generación de atención médica que combina genómica, inteligencia artificial, datos en tiempo real y medicina personalizada para anticiparse a los procesos de envejecimiento y optimizar la salud futura.
+    <br><br>
+    No somos un simple proveedor de tests genéticos ni una app de bienestar: somos la primera clínica digital especializada exclusivamente en longevidad científica, aplicando metodologías clínicas basadas en evidencia y monitorización continua.
+  </div>
+ </div>
+ <div class="faq-item">
+    <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Cómo democratizamos tu acceso a tratamientos de longevidad?
+    </button>
+    <div class="faq-answer" hidden>
+    La ciencia de la longevidad ha estado históricamente reservada a élites con acceso a clínicas privadas en EE.UU., Suiza o Asia. 
+    <br><br>
+    En VitalExtension hemos desarrollado una metodología rigurosa y escalable que democratiza esta ciencia, eliminando infraestructuras, intermediarios y costes innecesarios (como pruebas redundantes o marcas de lujo), sin renunciar al rigor clínico ni a la personalización.
+    <br><br>
+    Gracias a nuestra estructura digital, acceso directo a laboratorios certificados y tecnologías propias como Vital Twin, ofrecemos servicios que antes costaban miles de euros, ahora disponibles a una fracción del precio.
+  </div>
+</div>
+  </div>
+
+  <!-- Categoría 2 -->
+  <div class="faq-category">
+    <h3>Acerca de nuestro Test Genético VitalExplore</h3>
+    <div class="faq-item">
+      <button aria-expanded="false" onclick="toggleFAQ(this)">
+        ¿La saliva es tan fiable como la sangre para analizar mi ADN?
+      </button>
+      <div class="faq-answer" hidden>
+        Sí. El ADN presente en la saliva es igual de válido que el extraído de sangre para análisis genéticos, siempre que se utilicen métodos de recogida y procesamiento adecuados.  
+    <br><br>
+    La saliva contiene células epiteliales ricas en ADN, y los kits actuales están optimizados para preservar su integridad. Diversos estudios clínicos han demostrado que la calidad, pureza y rendimiento del ADN salival son equivalentes a los obtenidos por extracción sanguínea para pruebas como genotipado, arrays de SNPs o secuenciación de nueva generación (NGS).
+    <br><br>
+    Por ello, laboratorios certificados y bancos de datos genéticos como 23andMe, Ancestry o el UK Biobank utilizan rutinariamente muestras de saliva, sin comprometer la fiabilidad ni la reproducibilidad de los resultados.
+    <br><br>
+  </div>
+</div>
+    <div class="faq-item">
+      <button aria-expanded="false" onclick="toggleFAQ(this)">
+        ¿Cuál es el plazo de entrega del KIT?
+      </button>
+      <div class="faq-answer" hidden>
+        Recibirás tu kit en un plazo de entre 48 a 72 horas, según la zona del mundo en la que te encuentres.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button aria-expanded="false" onclick="toggleFAQ(this)">
+        ¿En cuánto tiempo recibirás tu resultado?
+      </button>
+      <div class="faq-answer" hidden>
+        Una vez recibida tu muestra en nuestro laboratorio certificado, los tiempos habituales son:
+     <ul>
+      <li><strong>VitalExplore Basic:</strong> 6-8 semanas. </li>
+      <li><strong>VitalExplore Functional:</strong> 12 semanas. </li>
+      <li><strong>VitalExplore Complete:</strong> 16 semanas. </li>
+    </ul>  
+    
+    </div>
+    </div>
+  </div>
+
+  <!-- Categoría 3 -->
+  <div class="faq-category">
+    <h3>Acerca de nuestro servicio Vital IA</h3>
+    <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Vale la pena contratar el servicio de Vital IA si voy a utilizar el servicio de VitalCare?
+  </button>
+  <div class="faq-answer" hidden>
+    Sí, totalmente. VitalCare y Vital IA son sinérgicos, pero cumplen funciones diferentes y complementarias:
+
+    <ul>
+      <li><strong>Vital IA actúa 24/7 como tu asistente inteligente</strong>: interpreta en tiempo real tus datos (genéticos, biomarcadores, wereables, cuestionarios,..) para asesorarte, diseñar planes nutricionales, de estilo de vida o ejercicio.</li>
+      <li><strong>Dinamismo y adaptación continua:</strong> mientras que VitalCare ofrece supervisión médica programada, Vital IA puede sugerir ajustes rápidos según nuevos hallazgos o cambios en tus hábitos.</li>
+      <li><strong>Valor de coste eficiente:</strong> al contratar Vital IA, consigues una capa tecnológica avanzada sin duplicar la inversión médica, aprovechando dosis de ciencia de primer nivel con eficiencia económica.</li>
+      <li><strong>Empoderamiento y autonomía:</strong> puedes explorar tus resultados, seguir recomendaciones y consultar dudas básicas directamente con la IA, reduciendo consultas innecesarias y aumentando tu protagonismo en el proceso de salud.</li>
+      <li><strong>Mayor personalización en VitalCare:</strong> cuando te vea el médico, este ya contará con un análisis preliminar profundo de tus datos, lo que permite consultas más enfocadas, con diagnósticos y planes precisos.</li>
+    </ul>
+
+    👉 De este modo, <strong>la IA no sustituye al médico, sino que potencia tu experiencia clínica y acelera decisiones certeras</strong>. Si ya usas VitalCare, Vital IA multiplica su impacto, te da autonomía y convierte tu atención médica en algo proactivo y continuo.
+  </div>
+    </div>
+    <div class="faq-item">
+      <button aria-expanded="false" onclick="toggleFAQ(this)">
+        ¿La IA sustituye al médico?
+      </button>
+      <div class="faq-answer" hidden>
+    No. <strong>Vital IA no sustituye al médico, lo complementa</strong>. Nuestra inteligencia artificial está diseñada para asistir en la interpretación de datos complejos —como tus variantes genéticas, biomarcadores, hábitos y patrones longitudinales— y generar recomendaciones basadas en evidencia científica en humanos.
+    <br><br>
+    Sin embargo, toda decisión clínica o estrategia personalizada pasa por la validación de un profesional médico especializado. La IA actúa como copiloto: agiliza el análisis, detecta patrones que podrían pasar desapercibidos y facilita la personalización, pero <strong>no realiza diagnósticos ni prescribe tratamientos de forma autónoma</strong>.
+    <br><br>
+    Este modelo híbrido entre inteligencia artificial y supervisión médica es el que recomiendan organismos internacionales como la European Society of Medical Oncology (ESMO) y la FDA en sus marcos regulatorios de IA aplicada a salud.
+  
+  </div>
+    </div>
+  </div>
+
+  <!-- Categoría 4 -->
+  <div class="faq-category">
+    <h3>Acerca de nuestra asistencia médica VitalCare</h3>
+    <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Qué diferencia a VitalCare de una consulta médica convencional o de un chequeo general de salud?
+  </button>
+  <div class="faq-answer" hidden>
+    VitalCare no es una consulta puntual ni un chequeo tradicional: es un sistema clínico diseñado específicamente para "modular el envejecimiento y optimizar tu salud futura", integrando genética, biomarcadores, IA y seguimiento longitudinal.
+    <br><br>
+    A diferencia de una consulta médica convencional que suele ser reactiva (centrada en síntomas), en VitalCare:
+    <ul>
+      <li><strong>Actuamos de forma proactiva y personalizada</strong>: intervenimos antes de que aparezcan los problemas, basándonos en tus riesgos genéticos y biológicos.</li>
+      <li><strong>Analizamos tu perfil de longevidad</strong>: identificamos marcadores como edad biológica, daño mitocondrial, disfunción inflamatoria o metabolismo oxidativo.</li>
+      <li><strong>Diseñamos planes clínicos validados científicamente</strong>: desde estrategias con fármacos geroprotectores, hasta ajustes nutricionales, ejercicio molecular y optimización del sueño.</li>
+      <li><strong>Hacemos seguimiento a medio y largo plazo</strong>: nuestros planes no terminan con un informe, incluyen revisión, ajuste y acompañamiento médico constante.</li>
+    </ul>
+    VitalCare es medicina de precisión aplicada al envejecimiento, y está pensada para personas que buscan tomar el control de su salud futura con evidencia, rigor y visión clínica.
+  </div>
+    </div>
+    <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Si VitalCare es tan bueno, por qué ese tipo de servicios no se ofrece aún en la medicina pública?
+  </button>
+  <div class="faq-answer" hidden>
+    Es una gran pregunta, y la respuesta está relacionada con el modelo actual de los sistemas públicos de salud. La medicina pública —salvo excepciones pioneras— sigue centrada en un enfoque reactivo, orientado a tratar enfermedades una vez que aparecen. Esto se debe a que:
+    <ul>
+      <li><strong>Los sistemas públicos están diseñados para la atención masiva y aguda</strong>, no para la personalización preventiva basada en genómica, edad biológica o algoritmos de longevidad.</li>
+      <li><strong>Muchas de las herramientas que usamos en VitalCare (como el análisis de edad epigenética o terapias con geroprotectores)</strong> son tecnologías recientes, validadas en estudios humanos, pero aún no incorporadas a los protocolos asistenciales estándar.</li>
+      <li><strong>El sistema público requiere evidencia de coste-efectividad poblacional</strong> para adoptar nuevas prácticas, lo que puede tardar años, incluso si la ciencia ya las respalda a nivel individual.</li>
+    </ul>
+    VitalCare nace precisamente para cubrir ese vacío: <strong>aplicamos la ciencia más actualizada en longevidad clínica, personalizada a tu perfil, con seguimiento médico real</strong>. No sustituimos la medicina pública, la complementamos, llevando al presente lo que probablemente será estándar en el futuro.
+  </div>
+    </div>
+  </div>
+
+  <!-- Categoría 5 -->
+  <div class="faq-category">
+    <h3>Acerca de Genética</h3>
+    <!-- Pregunta 1 -->
+  <div class="faq-item">
+    <button aria-expanded="false" onclick="toggleFAQ(this)">
+      ¿Qué sentido tiene conocer mi predisposición genética si aún estoy sano?
+    </button>
+    <div class="faq-answer" hidden>
+      Conocer tus predisposiciones genéticas no es para preocuparse, sino para actuar con anticipación. Si tienes una mayor probabilidad genética de sufrir una enfermedad en el futuro, no significa que vaya a ocurrir —pero sí que tienes la oportunidad única de prevenirla.
+      <br><br>
+      Muchas enfermedades (diabetes tipo 2, Alzheimer, algunos tipos de cáncer…) son multifactoriales: <strong>los genes influyen, pero no determinan</strong>. En VitalExtension, usamos esta información para diseñar estrategias clínicas que reducen tus riesgos de forma personalizada.
+      
+    </div>
+  </div>
+
+  <!-- Pregunta 2 -->
+  <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Por qué algunos resultados genéticos no coinciden con lo que veo en mi cuerpo o familia?
+  </button>
+  <div class="faq-answer" hidden>
+    Porque la genética ofrece una visión de tus <strong>tendencias biológicas</strong>, no una fotografía cerrada. Es posible que tengas una variante asociada a un rasgo (como predisposición a la calvicie o al insomnio), pero que no se exprese por completo, o que factores del entorno estén modulando su efecto.
+    <br><br>
+    Eso no significa que el análisis no sirva, al contrario: <strong>nos permite anticipar y personalizar</strong>. Saber que tienes cierta propensión, incluso si aún no se manifiesta, es una ventaja clínica para actuar antes de que aparezcan síntomas o para optimizar tu estilo de vida. 
+    <br><br>
+    Además, muchos rasgos complejos (como la inteligencia, el metabolismo o el envejecimiento) no dependen de un solo gen, sino de cientos de variantes que interactúan entre sí y con el entorno. Por eso, en VitalExtension interpretamos tus resultados genéticos en conjunto con biomarcadores y hábitos, para darte recomendaciones útiles, no especulativas.
+  
+  </div>
+  </div>
+
+  <!-- Pregunta 3 -->
+  <div class="faq-item">
+    <button aria-expanded="false" onclick="toggleFAQ(this)">
+      ¿Qué tipo de información útil puedo sacar realmente de mi ADN?
+    </button>
+    <div class="faq-answer" hidden>
+      Mucha más de la que imaginas. Tu ADN puede revelar cómo metabolizas ciertos nutrientes, cómo respondes a fármacos, qué vías inflamatorias están más activas, qué riesgos genéticos puedes modular y qué estrategias pueden ayudarte a vivir más y mejor.
+      <br><br>
+      En VitalExtension transformamos esa información en planes accionables, con base científica y adaptados a tu realidad clínica. No es información “decorativa”, sino una herramienta para <strong>tomar decisiones médicas y de estilo de vida con precisión</strong>.
+      
+    </div>
+  </div>
+
+  <!-- Pregunta 4 -->
+  <div class="faq-item">
+  <button aria-expanded="false" onclick="toggleFAQ(this)">
+    ¿Mis resultados genéticos pueden cambiar con el tiempo?
+  </button>
+  <div class="faq-answer" hidden>
+    No, tus resultados genéticos no cambian. El test analiza tu ADN, que es como un manual de instrucciones estable: las variantes que tienes hoy serán las mismas dentro de 20 años. Por eso, <strong>no es necesario repetir el test genético</strong> si ya se ha hecho correctamente.
+    <br><br>
+    Lo que sí puede cambiar es <strong>cómo se expresan esos genes</strong>. Por ejemplo, aunque tengas una predisposición genética al sobrepeso, si llevas un estilo de vida saludable, es posible que ese riesgo nunca se manifieste. Esto se debe a la <strong>epigenética</strong>: una capa de regulación que actúa como interruptores que activan o silencian ciertos genes, influida por factores como la dieta, el estrés o el sueño.
+    <br><br>
+    En VitalExtension no solo analizamos tu ADN, sino también tus biomarcadores y hábitos, para entender cómo interactúan con tu genética y ofrecerte un plan de longevidad personalizado y actualizado.
+  </div>
+    </div>
+  </div>
+
+</section>
